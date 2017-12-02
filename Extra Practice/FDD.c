@@ -99,7 +99,25 @@ FDD_INPUT readInput() {
 	FDD_INPUT input = INVALID;
 	char str[80];
 	scanf("%s", str);
+	//here is where you're always inputting new data into a new array
+	//it would be better to use a single char instead, such as: 
+	
+	/*char str;
+	scanf("%c", str);
+	switch(str){
+		case '0':
+		input = BIT_0;
+		break;
 
+		case '1':
+		input = BIT_1;
+		break;
+
+		case 's':
+		input = STOP;
+		break;
+	}
+	return input;*/
 	switch (str[0]) {
 
 	case '0':
